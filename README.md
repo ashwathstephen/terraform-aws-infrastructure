@@ -6,7 +6,7 @@
 
 Production-ready, reusable Terraform modules for AWS infrastructure. Built from real-world experience managing cloud infrastructure at scale.
 
-## 📦 Available Modules
+## Available Modules
 
 | Module | Description | Features |
 |--------|-------------|----------|
@@ -17,7 +17,7 @@ Production-ready, reusable Terraform modules for AWS infrastructure. Built from 
 | [rds](./modules/rds) | RDS database clusters | Multi-AZ, Encryption, Automated backups |
 | [s3](./modules/s3) | S3 buckets with security | Versioning, Encryption, Lifecycle policies |
 
-## 🚀 Quick Start
+## Quick Start
 
 ```hcl
 module "vpc" {
@@ -55,7 +55,7 @@ module "eks" {
 }
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── modules/
@@ -74,22 +74,22 @@ module "eks" {
     └── fmt-check.sh   # Format checking
 ```
 
-## 🔧 Prerequisites
+## Prerequisites
 
 - Terraform >= 1.0
 - AWS CLI configured with appropriate credentials
 - AWS account with necessary permissions
 
-## 💡 Best Practices Implemented
+## Best Practices Implemented
 
-- **Security**: All resources use encryption at rest and in transit
-- **High Availability**: Multi-AZ deployments by default
-- **Cost Optimization**: Right-sized defaults with autoscaling
-- **Observability**: CloudWatch metrics and logging enabled
-- **Tagging**: Consistent tagging strategy across all resources
-- **State Management**: Remote state with S3 and DynamoDB locking
+- Security: All resources use encryption at rest and in transit
+- High Availability: Multi-AZ deployments by default
+- Cost Optimization: Right-sized defaults with autoscaling
+- Observability: CloudWatch metrics and logging enabled
+- Tagging: Consistent tagging strategy across all resources
+- State Management: Remote state with S3 and DynamoDB locking
 
-## 🧪 Local Testing
+## Local Testing
 
 ```bash
 # Validate all modules
@@ -102,7 +102,7 @@ make fmt-check
 make test-vpc
 ```
 
-## 📝 Examples
+## Examples
 
 See the [examples](./examples) directory for complete, working examples:
 
@@ -110,19 +110,18 @@ See the [examples](./examples) directory for complete, working examples:
 - [EKS Cluster](./examples/eks-cluster) - Kubernetes cluster with VPC
 - [EC2 Instance](./examples/ec2-instance) - EC2 with security groups
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Run `terraform fmt` and `terraform validate`
 4. Submit a pull request
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-## 👤 Author
+## Author
 
-**Ashwath Abraham Stephen**  
+Ashwath Abraham Stephen
 Senior DevOps Engineer | [LinkedIn](https://linkedin.com/in/ashwathstephen) | [GitHub](https://github.com/ashwathstephen)
-
