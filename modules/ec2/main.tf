@@ -203,7 +203,7 @@ resource "aws_cloudwatch_metric_alarm" "auto_recovery" {
   }
 
   alarm_actions = [
-    "arn:aws:automate:${data.aws_region.current.name}:ec2:recover"
+    "arn:aws:automate:${data.aws_region.current.id}:ec2:recover"
   ]
 
   tags = var.tags
